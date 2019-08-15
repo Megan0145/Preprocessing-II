@@ -172,6 +172,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  flex-wrap: wrap;
   padding: 2rem 0;
   width: 100%;
   border-bottom: 2px dashed #C0C0C0;
@@ -179,10 +180,23 @@ nav {
 nav .navJumbo {
   width: 50%;
 }
+@media (max-width: 500px) {
+  nav .navJumbo {
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
 nav .navLinks {
   width: 50%;
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  nav .navLinks {
+    width: 100vw;
+    justify-content: space-around;
+  }
 }
 nav .navLinks a {
   text-decoration: none;
