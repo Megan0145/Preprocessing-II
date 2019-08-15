@@ -187,6 +187,11 @@ nav .navJumbo {
     margin-bottom: 1rem;
   }
 }
+@media (max-width: 800px) {
+  nav .navJumbo {
+    padding: 0 10vw;
+  }
+}
 nav .navLinks {
   width: 50%;
   display: flex;
