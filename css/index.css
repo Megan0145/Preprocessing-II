@@ -340,6 +340,7 @@ nav .navLinks a {
   .mainHeader .headerImg,
   .mainHeader .headerText {
     width: 75%;
+    text-align: center;
   }
 }
 .mainHeader .headerText {
