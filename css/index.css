@@ -254,3 +254,12 @@ nav .navLinks a {
 .mainHeader .headerRow {
   padding: 2rem 0;
 }
+.btn {
+  background-color: teal;
+  font-size: 2rem;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1rem;
+  width: 20rem;
+  border-radius: 1.4rem;
+}
