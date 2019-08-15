@@ -294,6 +294,11 @@ nav .navLinks a {
     padding: 1%;
   }
 }
+@media (max-width: 800px) {
+  .home .content-destination {
+    text-align: center;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -329,6 +334,7 @@ nav .navLinks a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .mainHeader .headerImg,
 .mainHeader .headerText {
@@ -340,16 +346,6 @@ nav .navLinks a {
     width: 98%;
     padding: 2%;
   }
-}
-@media (max-width: 800px) {
-  .mainHeader .headerImg,
-  .mainHeader .headerText {
-    width: 75%;
-    text-align: center;
-  }
-}
-.mainHeader .headerText {
-  border-bottom: 2px dashed #C0C0C0;
 }
 .btn {
   background-color: #17A2B8;
