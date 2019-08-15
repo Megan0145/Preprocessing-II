@@ -323,6 +323,7 @@ nav .navLinks a {
 .mainHeader {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .mainHeader .headerImg,
 .mainHeader .headerText {
@@ -333,6 +334,12 @@ nav .navLinks a {
   .mainHeader .headerText {
     width: 98%;
     padding: 2%;
+  }
+}
+@media (max-width: 800px) {
+  .mainHeader .headerImg,
+  .mainHeader .headerText {
+    width: 75%;
   }
 }
 .mainHeader .headerText {

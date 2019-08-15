@@ -104,11 +104,16 @@
 .mainHeader {
   display: flex;
   flex-direction: column;
+  align-items: center;
+
     .headerImg, .headerText{
       padding: 2rem 0;
       @media @mobile {
         width: 98%;
         padding: 2%;
+      }
+      @media @tablet {
+        width:75%;
       }
     }
     .headerText {
