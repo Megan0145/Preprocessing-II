@@ -6,19 +6,38 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    @media @mobile {
+      flex-direction: column;
+      flex-wrap: no-wrap;
+      align-items: center;
+      width: 96%;
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+        @media @mobile {
+          width: 98%;
+          padding: 1%;
+        }
     }
 
     .img-content {
       width: 48%;
-      padding-left: 1%;
+      padding: 1%;
+      display: flex;
+
+        @media @mobile {
+          width: 100%;
+          justify-content: center;
+        }
 
       img {
         border-radius: 10px;
+          @media @mobile {
+            width: 98%;
+          }
       }
     }
   }
@@ -26,6 +45,9 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -35,6 +57,10 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+        @media @mobile {
+          padding: 1%;
+        }
     }
   }
 
@@ -42,6 +68,13 @@
     width: 75%;
     margin: 0 auto 30px;
 
+      @media @mobile {
+        width: 98%;
+        padding: 1%;
+      }
+      @media @tablet {
+        text-align: center;
+      }
     img {
       border-radius: 10px;
     }
@@ -53,9 +86,51 @@
     display: flex;
     justify-content: space-between;
 
+      @media @mobile, @tablet {
+        flex-direction: column;
+        align-items: center;
+        width: 98%;
+        padding-left: 1%;
+      }
+      @media @tablet {
+        text-align: center;
+      }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+        @media @mobile, @tablet {
+          width: 75%;
+        }
+        @media @tablet {
+          
+        }
     }
   }
 }// home
+.mainHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px dashed @silver;
+
+
+    .headerImg, .headerText{
+      padding: 2rem 0;
+      @media @mobile {
+        width: 98%;
+        padding: 2%;
+      }
+    }
+    
+}
+
+.btn {
+  .signMeUpButton(@eastern-blue, 2rem, @white);
+
+    @media @mobile, @tablet {
+      width: 100%;
+    }
+
+}
