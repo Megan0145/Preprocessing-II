@@ -186,7 +186,7 @@ nav .navLinks {
 }
 nav .navLinks a {
   text-decoration: none;
-  color: #000000;
+  color: #212529;
   font-size: 1.7rem;
 }
 .footer {
@@ -245,4 +245,12 @@ nav .navLinks a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.mainHeader {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.mainHeader .headerRow {
+  padding: 2rem 0;
 }
